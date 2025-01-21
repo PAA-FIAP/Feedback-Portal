@@ -24,12 +24,13 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
         .logo {
             max-width: 150px;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
         .title {
             font-size: 28px;
@@ -89,7 +90,10 @@
 <body>
     <div class="container">
         <!-- Logo Section -->
-        <img src="https://paawebadmin.paa.gov.pk//media/t4djkuxu/paa_logo_n.png" alt="Portal Logo" class="logo">
+        <div class="logo-container">
+            <img src="https://paawebadmin.paa.gov.pk//media/t4djkuxu/paa_logo_n.png" alt="Portal Logo" class="logo">
+            <img src="https://citizenportal.gov.pk/images/logo.png" alt="PMDU Logo" class="logo">
+        </div>
         
         <div class="title">Welcome to Pakistan Airports Authority</div>
         <div class="subtitle">Complaint / Suggestion / Feedback Portal</div>
