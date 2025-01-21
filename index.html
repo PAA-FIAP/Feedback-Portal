@@ -7,16 +7,13 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: url('https://citizenportal.gov.pk/images/logo.png') no-repeat center center;
-            background-size: cover;
-            background-color: rgba(255, 255, 255, 0.7);
-            background-blend-mode: lighten;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: #f4f4f4;
         }
         .container {
             max-width: 700px;
@@ -52,7 +49,10 @@
             line-height: 1.6;
         }
         .link-btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin: 10px;
             padding: 12px 25px;
             font-size: 16px;
@@ -62,6 +62,9 @@
             text-decoration: none;
             border-radius: 8px;
             transition: all 0.3s ease;
+        }
+        .link-btn img {
+            max-height: 20px;
         }
         .link-btn:hover {
             background: #0056b3;
@@ -93,10 +96,18 @@
             To download the Pakistan Citizen Portal mobile application on Android or Apple devices, please click on the relevant option below. Alternatively, use the PMDU Web Portal to launch complaints against any government department operating at the airport. Additionally, you can launch complaints on the Pakistan Airport Authority Web Portal.
         </p>
 
-        <a href="https://play.google.com/store/apps/details?id=com.govpk.citizensportal&hl=en" class="link-btn" target="_blank">Google Play Store</a>
-        <a href="https://apps.apple.com/us/app/pakistan-citizens-portal/id1439885831" class="link-btn" target="_blank">Apple App Store</a>
-        <a href="https://web.citizenportal.gov.pk/" class="link-btn" target="_blank">PMDU Web Portal</a>
-        <a href="https://paa.gov.pk/e-services/register-complaint/" class="link-btn" target="_blank">PAA Web Portal</a>
+        <a href="https://play.google.com/store/apps/details?id=com.govpk.citizensportal&hl=en" class="link-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android Logo">Google Play Store
+        </a>
+        <a href="https://apps.apple.com/us/app/pakistan-citizens-portal/id1439885831" class="link-btn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">Apple App Store
+        </a>
+        <a href="https://web.citizenportal.gov.pk/" class="link-btn" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Web Logo">PMDU Web Portal
+        </a>
+        <a href="https://paa.gov.pk/e-services/register-complaint/" class="link-btn" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Web Logo">PAA Web Portal
+        </a>
     </div>
 </body>
 </html>
