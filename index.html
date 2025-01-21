@@ -39,10 +39,10 @@
             font-weight: bold;
         }
         .airport-name {
-            font-size: 36px; /* Decreased by 2 more points */
+            font-size: 36px; 
             color: #333;
             font-weight: normal;
-            border-bottom: 2px solid #007bff; /* Blue line below */
+            border-bottom: 2px solid #007bff; 
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -61,25 +61,27 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            margin: 10px;
-            width: 220px; /* Adjusted width for the button */
-            height: 50px; /* Fixed height */
+            gap: 15px;
+            margin: 15px 0; /* Added margin to buttons for spacing */
+            width: 250px; /* Set a fixed width for buttons */
+            height: 60px; /* Increased height for better visibility */
             font-size: 16px;
             font-weight: bold;
             color: #ffffff;
             background: #007bff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 12px; /* Rounded corners */
+            padding: 0 20px; /* Added padding inside the button */
             transition: all 0.3s ease;
             text-align: center;
         }
         .link-btn img {
-            max-height: 20px;
+            max-height: 24px; /* Slightly larger icon */
         }
         .link-btn:hover {
             background: #0056b3;
-            transform: translateY(-2px);
+            transform: translateY(-3px); /* Slight lift effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
         }
         @media (max-width: 768px) {
             .title {
