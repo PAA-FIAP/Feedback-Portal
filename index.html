@@ -27,17 +27,16 @@
         }
         .logo-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center the logos */
             align-items: center;
             margin-bottom: 20px;
             flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
-            gap: 10px; /* Add space between logos */
+            gap: 5px; /* Reduced space between logos */
         }
         .logo {
             max-width: 120px;
             height: auto;
-            /* Ensure logos are responsive */
-            width: 100%; /* Allow the logo to resize proportionally */
+            width: 100%; /* Ensure logos are responsive */
         }
         .title {
             font-size: 28px;
@@ -105,12 +104,11 @@
                 padding: 10px 20px;
             }
             .logo-container {
-                flex-direction: column; /* Stack logos vertically on smaller screens */
-                align-items: center; /* Center logos horizontally */
-                gap: 15px; /* Add space between stacked logos */
+                flex-direction: row; /* Keep logos side by side on smaller screens */
+                justify-content: center; /* Center logos horizontally */
             }
             .logo {
-                max-width: 150px; /* Increase max-width for better visibility on mobile */
+                max-width: 130px; /* Slightly increase logo size for better visibility on mobile */
             }
         }
     </style>
