@@ -14,6 +14,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         .container {
             max-width: 700px;
@@ -27,16 +28,16 @@
         }
         .logo-container {
             display: flex;
-            justify-content: center; /* Center the logos */
+            justify-content: center;
             align-items: center;
             margin-bottom: 20px;
-            gap: 20px; /* Adjusted space between logos */
-            flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+            gap: 20px;
+            flex-wrap: wrap; /* Make the logos wrap on small screens */
         }
         .logo {
             max-width: 120px;
+            width: auto;
             height: auto;
-            width: 100%; /* Ensure logos are responsive */
         }
         .title {
             font-size: 28px;
@@ -68,7 +69,7 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            margin: 15px 0;
+            margin: 10px 0;
             width: 250px;
             height: 60px;
             font-size: 16px;
@@ -102,16 +103,17 @@
             .link-btn {
                 font-size: 14px;
                 padding: 10px 20px;
+                width: 80%; /* Adjust button width on mobile */
             }
             .logo-container {
                 flex-direction: column; /* Stack logos vertically on small screens */
                 gap: 10px; /* Reduce gap between logos */
             }
             .logo {
-                max-width: 130px; /* Slightly increase logo size for better visibility on mobile */
+                max-width: 130px; /* Adjust logo size on mobile */
             }
             .container {
-                padding: 20px; /* Reduce padding for smaller screens */
+                padding: 20px; /* Reduce padding for mobile screens */
             }
         }
     </style>
