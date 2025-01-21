@@ -23,14 +23,18 @@
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             text-align: center;
+            overflow: hidden; /* Prevent overflow */
         }
         .logo-container {
             display: flex;
             justify-content: space-between;
+            align-items: center; /* Center logos vertically */
             margin-bottom: 20px;
+            flex-wrap: wrap; /* Ensure logos wrap on small screens */
         }
         .logo {
-            max-width: 150px;
+            max-width: 120px; /* Adjust max-width for logos */
+            height: auto;
         }
         .title {
             font-size: 28px;
@@ -87,12 +91,23 @@
             .title {
                 font-size: 24px;
             }
+            .airport-name {
+                font-size: 32px; /* Adjust for smaller screens */
+            }
             .subtitle {
                 font-size: 16px;
             }
             .link-btn {
                 font-size: 14px;
                 padding: 10px 20px;
+            }
+            .logo-container {
+                flex-direction: column; /* Stack logos vertically on smaller screens */
+                align-items: center; /* Center logos horizontally */
+            }
+            .logo {
+                max-width: 100px; /* Further reduce logo size on small screens */
+                margin-bottom: 10px; /* Space between logos */
             }
         }
     </style>
