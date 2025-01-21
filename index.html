@@ -23,17 +23,18 @@
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             text-align: center;
-            overflow: hidden; /* Prevent overflow */
+            overflow: hidden;
         }
         .logo-container {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Center logos vertically */
+            align-items: center;
             margin-bottom: 20px;
-            flex-wrap: wrap; /* Ensure logos wrap on small screens */
+            flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+            gap: 10px; /* Add space between logos */
         }
         .logo {
-            max-width: 120px; /* Adjust max-width for logos */
+            max-width: 120px;
             height: auto;
         }
         .title {
@@ -66,33 +67,33 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            margin: 15px 0; /* Added margin to buttons for spacing */
-            width: 250px; /* Set a fixed width for buttons */
-            height: 60px; /* Increased height for better visibility */
+            margin: 15px 0;
+            width: 250px;
+            height: 60px;
             font-size: 16px;
             font-weight: bold;
             color: #ffffff;
             background: #007bff;
             text-decoration: none;
-            border-radius: 12px; /* Rounded corners */
-            padding: 0 20px; /* Added padding inside the button */
+            border-radius: 12px;
+            padding: 0 20px;
             transition: all 0.3s ease;
             text-align: center;
         }
         .link-btn img {
-            max-height: 24px; /* Slightly larger icon */
+            max-height: 24px;
         }
         .link-btn:hover {
             background: #0056b3;
-            transform: translateY(-3px); /* Slight lift effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 768px) {
             .title {
                 font-size: 24px;
             }
             .airport-name {
-                font-size: 32px; /* Adjust for smaller screens */
+                font-size: 32px;
             }
             .subtitle {
                 font-size: 16px;
@@ -104,10 +105,10 @@
             .logo-container {
                 flex-direction: column; /* Stack logos vertically on smaller screens */
                 align-items: center; /* Center logos horizontally */
+                gap: 20px; /* Add more space between stacked logos */
             }
             .logo {
-                max-width: 100px; /* Further reduce logo size on small screens */
-                margin-bottom: 10px; /* Space between logos */
+                max-width: 120px; /* Ensure logos don't get too large */
             }
         }
     </style>
